@@ -1,0 +1,19 @@
+{
+    "students": [
+        {
+            "name": "Nhia Bacoy",
+            "grade_level": "Grade 6",
+            "grades": {}
+        },
+        {
+            "name": "Bobby Gutang",
+            "grade_level": "Grade 10",
+            "grades": {}
+        },
+        {
+            "name": "Ac Palarca",
+            "grade_level": "1st Year BSIT",
+            "grades": {}
+        }
+    ]
+}
