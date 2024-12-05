@@ -1,19 +1,64 @@
 {
     "students": [
         {
-            "name": "Nhia Bacoy",
-            "grade_level": "Grade 6",
-            "grades": {}
-        },
-        {
-            "name": "Bobby Gutang",
-            "grade_level": "Grade 10",
-            "grades": {}
-        },
-        {
             "name": "Ac Palarca",
             "grade_level": "1st Year BSIT",
-            "grades": {}
+            "grades": {
+                "Math": {
+                    "Written Works": 99.0,
+                    "Performance Tasks": 99.0,
+                    "Quarterly Assessment": 99.0,
+                    "Final Grade": 99.0
+                },
+                "Science": {
+                    "Written Works": 99.0,
+                    "Performance Tasks": 99.0,
+                    "Quarterly Assessment": 99.0,
+                    "Final Grade": 99.0
+                },
+                "English": {
+                    "Written Works": 99.0,
+                    "Performance Tasks": 99.0,
+                    "Quarterly Assessment": 99.0,
+                    "Final Grade": 99.0
+                },
+                "Filipino": {
+                    "Written Works": 99.0,
+                    "Performance Tasks": 99.0,
+                    "Quarterly Assessment": 99.0,
+                    "Final Grade": 99.0
+                },
+                "Physical Education": {
+                    "Written Works": 99.0,
+                    "Performance Tasks": 99.0,
+                    "Quarterly Assessment": 99.0,
+                    "Final Grade": 99.0
+                },
+                "Araling Panlipunan": {
+                    "Written Works": 99.0,
+                    "Performance Tasks": 99.0,
+                    "Quarterly Assessment": 99.0,
+                    "Final Grade": 99.0
+                },
+                "ICT": {
+                    "Written Works": 99.0,
+                    "Performance Tasks": 99.0,
+                    "Quarterly Assessment": 99.0,
+                    "Final Grade": 99.0
+                },
+                "TLE": {
+                    "Written Works": 99.0,
+                    "Performance Tasks": 99.0,
+                    "Quarterly Assessment": 99.0,
+                    "Final Grade": 99.0
+                },
+                "ESP": {
+                    "Written Works": 99.0,
+                    "Performance Tasks": 99.0,
+                    "Quarterly Assessment": 99.0,
+                    "Final Grade": 99.0
+                }
+            }
         }
     ]
 }
