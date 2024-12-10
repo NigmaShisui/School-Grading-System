@@ -9,12 +9,27 @@ def view_students():
 
     print("\nList of Students:")
     for idx, student in enumerate(students, 1):
-        print(f"{idx}. {student['name']} - Grade {student['grade_level']}")
+        print(f"{idx}. {student['name']} - {student['grade_level']}")
 
 #add or append student to the dataabase
 def add_student():
     name = input("Enter student name: ").strip()
     grade_level = input("Enter grade level (e.g., Grade 1, Grade 2, etc.): ").strip()
+
+    # Validate grade level
+    if grade_level.startswith("Grade"):
+        try:
+            grade_number = int(grade_level.split()[1])
+            if grade_number < 1 or grade_number > 6:
+                print("This is for elementary grade use only.")
+                return
+        except ValueError:
+            print("Invalid grade level format. Please use 'Grade 1', 'Grade 2', etc.")
+            return
+    else:
+        print("Invalid grade level format. Please use 'Grade 1', 'Grade 2', etc.")
+        return
+
     student = {
         "name": name,
         "grade_level": grade_level,
@@ -81,7 +96,7 @@ def update_student():
     if not students:
         print("No students to update.")
         return
-    
+
     view_students()
     student_id = int(input("Enter student ID to update: ")) - 1
     if 0 <= student_id < len(students):
@@ -89,6 +104,21 @@ def update_student():
         print(f"Updating student {student['name']}")
         name = input(f"Enter new name (current: {student['name']}): ").strip()
         grade_level = input(f"Enter new grade level (current: {student['grade_level']}): ").strip()
+
+        # Validate grade level
+        if grade_level.startswith("Grade"):
+            try:
+                grade_number = int(grade_level.split()[1])
+                if grade_number < 1 or grade_number > 6:
+                    print("This is for elementary grade use only.")
+                    return
+            except ValueError:
+                print("Invalid grade level format. Please use 'Grade 1', 'Grade 2', etc.")
+                return
+        else:
+            print("Invalid grade level format. Please use 'Grade 1', 'Grade 2', etc.")
+            return
+
         student['name'] = name
         student['grade_level'] = grade_level
         database.save_all('students', students)
